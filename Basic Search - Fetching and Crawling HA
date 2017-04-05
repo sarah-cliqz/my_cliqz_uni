@@ -1,0 +1,48 @@
+Hausaufgabe
+
+1. Where to find robots.txt?
+root location /
+
+2.
+wetter.de/robots.txt
+User-agent: *
+Disallow: /wetterde/
+Disallow: /wettercockpit/
+Disallow: /block/
+Disallow: /*format/html*/
+Disallow: /*format/json*/
+Disallow: /*format/xml*/
+Disallow: /welt/sonnensuche*
+Disallow: /mg/
+Disallow: /cms/service/partnerseiten.html
+Disallow: */?fb_xd_fragment
+Disallow: /reisen/skiwetter/liste/*
+Disallow: /js/wetter-no-robots.min.js
+--------------------------------------------
+wetter.com/robots.txt
+User-agent: * 
+Disallow: /wetter_aktuell/wettervorhersage/*/Africa/* 
+Disallow: /wetter_aktuell/wettervorhersage/*/Asien/* 
+Disallow: /wetter_aktuell/wettervorhersage/*/Europa/* 
+Disallow: /wetter_aktuell/wettervorhersage/*/Nordamerika/* 
+Disallow: /wetter_aktuell/wettervorhersage/*/Ozeanien/* 
+Disallow: /wetter_aktuell/wettervorhersage/*/Südamerika/* 
+Disallow: /wetter_aktuell/rueckblickdata/* 
+Disallow: /wetter_aktuell/forecast_update/ 
+Disallow: /favoriten/ 
+Disallow: /statistics?token=
+0
+
+-------------------------------------------
+wetteronline.de/robots.txt
+#PUPPET#
+
+User-agent: *
+Disallow:
+
+0
+
+User-agent refers to the type of web crawler that is allowed to search the document. 
+* being the wildcard, inhibiting all web crawlers
+Disallow will state any page on the website that is not available for the webcrawler. When nothing is stated, the whole website is open to be 'looked through' 
+
